@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Lab - [Your School Name]</title>
+    <style>
+       
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9; 
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #2e7d32; 
+            font-size: 2.5em;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .lab-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            align-items: center;
+        }
+
+        .photo-container {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .info-box {
+            background-color: #f1f8e9; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-10px);
+            background-color: #c8e6c9;
+        }
+
+        .info-box p {
+            line-height: 1.6;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+
+
+
+
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f4f4f4;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        .top-header .left-links,
+        .top-header .right-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .top-header a {
+            text-decoration: none;
+            color: #333;
+            transition: 0.3s;
+        }
+
+        .top-header a:hover {
+            color: #007bff;
+        }
+
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header img {
+            width: 80px;
+            height: auto;
+        }
+
+        .header .university-name {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+        }
+
+        .header .profile-img img {
+            width: 60px;
+            border-radius: 50%;
+        }
+  
+
+
+
+
+
+
+
+        nav {
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; 
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative; 
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: green;
+        }
+
+        
+        nav ul li ul {
+            display: none; 
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            z-index: 1000;
+            min-width: 150px;
+        }
+
+        nav ul li ul li {
+            width: 100%;
+        }
+
+        nav ul li:hover > ul {
+            display: block; 
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul li {
+                text-align: center;
+                width: 100%;
+            }
+
+            nav ul li a {
+                padding: 0.8rem;
+                border-bottom: 1px solid #222;
+            }
+
+            nav ul li ul {
+                position: relative;
+                background-color: #222;
+                top: 0;
+                text-align: center;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <div class="top-header">
+        <div class="left-links">
+            <a href="#">🏠 Site Home</a>
+            <a href="#">✉ Mail Login</a>
+            <a href="#">📞  Contact Us</a>
+        </div>
+        <div class="right-links">
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </div>
+
+   
+    <div class="header">
+        <img src="school logo.jpg" alt="University Logo">
+        <div class="university-name">
+            <h6>j.t.m socity</h6>
+            j.t.mahajan english med school,nhavi marg faizpur
+            <h6>maharashtra,india</h6>
+               
+        </div>
+        <div class="profile-img">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">About Us</a>
+                    <ul>
+                        <li><a href="school about.html">school</a></li>
+                        <li><a href="president.html">president</a></li>
+                        <li><a href="principle.html">principle</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Sport</a>
+                    <ul>
+                        <li><a href="#">indoor</a></li>
+                        <li><a href="outdoor.html">outdoor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Facility</a>
+                    <ul>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="science lab.html">Laboratory</a></li>
+                        <li><a href="coputer lab.html">computer lab</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Celebration</a>
+                    <ul>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Cultural Programs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Topper</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Our Advanced Science Lab</h1>
+        </div>
+
+        <div class="lab-info">
+           
+            <div class="photo-container">
+                <img src="science lad temp photo.jpg" alt="Science Lab Photo">
+            </div>
+
+            
+            <div class="info-box">
+                <p>
+                    Our state-of-the-art Science Lab is designed to spark curiosity and foster scientific thinking among students. Equipped with modern tools and eco-friendly resources, our lab provides hands-on learning experiences that inspire future innovators. Here, students can explore the wonders of science while promoting sustainable practices.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
